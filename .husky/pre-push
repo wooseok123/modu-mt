@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname -- "$0")/husky.sh"
 
-next build
+npm run build
