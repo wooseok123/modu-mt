@@ -11,10 +11,10 @@ MT의 시작과 끝이 모두 즐거울 수 있도록, **모두MT**
 
 ### 🚀 개발 스택
 
-<img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=NEXT.JS&logoColor=white">
-<img src="https://img.shields.io/badge/REACT.JS-61DAFB?style=for-the-badge&logo=React&logoColor=black">
-<img src="https://img.shields.io/badge/graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white">
-<img src="https://img.shields.io/badge/vanilla Extract-CFFFE5?style=for-the-badge&logoColor=white">
+<img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=NEXT.JS&logoColor=white" style="display: inline-block">
+<img src="https://img.shields.io/badge/REACT.JS-61DAFB?style=for-the-badge&logo=React&logoColor=black" style="display: inline-block">
+<img src="https://img.shields.io/badge/graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white" style="display: inline-block">
+<img src="https://img.shields.io/badge/vanilla Extract-CFFFE5?style=for-the-badge&logoColor=white" style="display: inline-block">
 
 ### 🛠️ 제작한 기능
 
