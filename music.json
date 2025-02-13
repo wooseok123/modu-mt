@@ -1,0 +1,92 @@
+{
+  "musics": [
+    {
+      "id": 1,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "Dynamite",
+      "artist": "BTS",
+      "year": 2020,
+      "duration": 199,
+      "genre": "K-pop",
+      "url": "https://www.youtube.com/watch?v=gdZLi9oWNZg"
+    },
+    {
+      "id": 2,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "How You Like That",
+      "artist": "BLACKPINK",
+      "year": 2020,
+      "duration": 182,
+      "genre": "K-pop",
+      "url": "https://www.youtube.com/watch?v=ioNng23DkIM"
+    },
+    {
+      "id": 3,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "Boy With Luv",
+      "artist": "BTS",
+      "year": 2019,
+      "duration": 229,
+      "genre": "K-pop",
+      "url": "https://www.youtube.com/watch?v=XsX3ATc3FbA"
+    },
+    {
+      "id": 4,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "Ditto",
+      "artist": "NewJeans",
+      "year": 2022,
+      "duration": 185,
+      "genre": "K-pop",
+      "url": "https://www.youtube.com/watch?v=Km71Rr9K-Bw"
+    },
+    {
+      "id": 5,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "year": 1983,
+      "duration": 294,
+      "genre": "Pop",
+      "url": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
+    },
+    {
+      "id": 6,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "Like a Prayer",
+      "artist": "Madonna",
+      "year": 1989,
+      "duration": 341,
+      "genre": "Pop",
+      "url": "https://www.youtube.com/watch?v=79fzeNUqQbQ"
+    },
+    {
+      "id": 7,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "I Wanna Dance with Somebody",
+      "artist": "Whitney Houston",
+      "year": 1987,
+      "duration": 291,
+      "genre": "Pop",
+      "url": "https://www.youtube.com/watch?v=eH3giaIzONA"
+    },
+    {
+      "id": 8,
+      "createdAt": "2024-02-13T08:14:12.000Z",
+      "updatedAt": "2024-02-13T08:14:12.000Z",
+      "title": "Hype Boy",
+      "artist": "NewJeans",
+      "year": 2022,
+      "duration": 179,
+      "genre": "K-pop",
+      "url": "https://www.youtube.com/watch?v=11cta61wi0g"
+    }
+  ]
+}
