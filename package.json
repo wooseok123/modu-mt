@@ -8,10 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "sync-db": "ts-node sync-db.ts",
+    "sync-db": "vite-node sync-db.ts",
     "migrate": "npx prisma migrate dev --name create_categories"
   },
-  "type": "module",
   "lint-staged": {
     "*.{ts,tsx}": [
       "prettier --write",
@@ -43,6 +42,7 @@
     "prettier": "^3.4.2",
     "prisma": "^6.3.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite-node": "^3.0.5"
   }
 }

@@ -1,7 +1,7 @@
 import { Music } from "@prisma/client";
 import musicsData from "./music.json";
 import { execSync } from "child_process";
-import prisma from "@/shared/lib/prisma";
+import prisma from "./src/shared/lib/prisma";
 
 async function syncDatabase() {
   if (!process.env.DATABASE_URL) {
@@ -37,6 +37,30 @@ async function syncDatabase() {
     }
 
     if (added.length > 0) {
+      // Get existing genres and artists
+      const existingGenres = await prisma.genre.findMany();
+      const existingArtists = await prisma.artist.findMany();
+
+      // Process each added music item
+      for (const music of added) {
+        // Check and create genre if it doesn't exist
+        const genre = existingGenres.find((g) => g.name === music.genreName);
+        if (!genre) {
+          await prisma.genre.create({
+            data: { name: music.genreName },
+          });
+        }
+
+        // Check and create artist if it doesn't exist
+        const artist = existingArtists.find((a) => a.name === music.artistName);
+        if (!artist) {
+          await prisma.artist.create({
+            data: { name: music.artistName },
+          });
+        }
+      }
+
+      // Create the music entries
       await prisma.music.createMany({
         data: added,
         skipDuplicates: true,
@@ -53,13 +77,11 @@ async function syncDatabase() {
       }
       console.log(`${modified.length}개 항목 수정됨`);
     }
-
     console.log("데이터베이스 동기화 완료");
   } catch (error) {
     console.error("Error syncing database:", error);
     process.exit(1);
   } finally {
-    await prisma.$disconnect();
   }
 }
 
