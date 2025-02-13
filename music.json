@@ -2,8 +2,6 @@
   "musics": [
     {
       "id": 1,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "Dynamite",
       "artist": "BTS",
       "year": 2020,
@@ -13,8 +11,6 @@
     },
     {
       "id": 2,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "How You Like That",
       "artist": "BLACKPINK",
       "year": 2020,
@@ -24,8 +20,6 @@
     },
     {
       "id": 3,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "Boy With Luv",
       "artist": "BTS",
       "year": 2019,
@@ -35,8 +29,6 @@
     },
     {
       "id": 4,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "Ditto",
       "artist": "NewJeans",
       "year": 2022,
@@ -46,8 +38,6 @@
     },
     {
       "id": 5,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "Billie Jean",
       "artist": "Michael Jackson",
       "year": 1983,
@@ -57,8 +47,6 @@
     },
     {
       "id": 6,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "Like a Prayer",
       "artist": "Madonna",
       "year": 1989,
@@ -68,8 +56,6 @@
     },
     {
       "id": 7,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "I Wanna Dance with Somebody",
       "artist": "Whitney Houston",
       "year": 1987,
@@ -79,8 +65,6 @@
     },
     {
       "id": 8,
-      "createdAt": "2024-02-13T08:14:12.000Z",
-      "updatedAt": "2024-02-13T08:14:12.000Z",
       "title": "Hype Boy",
       "artist": "NewJeans",
       "year": 2022,
