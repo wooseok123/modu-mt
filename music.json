@@ -80,6 +80,15 @@
       "duration": 182,
       "genreName": "K-pop",
       "url": "https://www.youtube.com/watch?v=ArmDp-zijuc"
+    },
+    {
+      "id": 10,
+      "title": "ETA",
+      "artistName": "NewJeans",
+      "year": 2023,
+      "duration": 175,
+      "genreName": "K-pop",
+      "url": "https://www.youtube.com/watch?v=DfX4F5a5qFw"
     }
   ]
 }
