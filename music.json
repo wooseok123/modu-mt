@@ -3,73 +3,73 @@
     {
       "id": 1,
       "title": "Dynamite",
-      "artist": "BTS",
+      "artistName": "BTS",
       "year": 2020,
       "duration": 199,
-      "genre": "K-pop",
+      "genreName": "K-pop",
       "url": "https://www.youtube.com/watch?v=gdZLi9oWNZg"
     },
     {
       "id": 2,
       "title": "How You Like That",
-      "artist": "BLACKPINK",
+      "artistName": "BLACKPINK",
       "year": 2020,
       "duration": 182,
-      "genre": "K-pop",
+      "genreName": "K-pop",
       "url": "https://www.youtube.com/watch?v=ioNng23DkIM"
     },
     {
       "id": 3,
       "title": "Boy With Luv",
-      "artist": "BTS",
+      "artistName": "BTS",
       "year": 2019,
       "duration": 229,
-      "genre": "K-pop",
+      "genreName": "K-pop",
       "url": "https://www.youtube.com/watch?v=XsX3ATc3FbA"
     },
     {
       "id": 4,
       "title": "Ditto",
-      "artist": "NewJeans",
+      "artistName": "NewJeans",
       "year": 2022,
       "duration": 185,
-      "genre": "K-pop",
+      "genreName": "K-pop",
       "url": "https://www.youtube.com/watch?v=Km71Rr9K-Bw"
     },
     {
       "id": 5,
       "title": "Billie Jean",
-      "artist": "Michael Jackson",
+      "artistName": "Michael Jackson",
       "year": 1983,
       "duration": 294,
-      "genre": "Pop",
+      "genreName": "Pop",
       "url": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
     },
     {
       "id": 6,
       "title": "Like a Prayer",
-      "artist": "Madonna",
+      "artistName": "Madonna",
       "year": 1989,
       "duration": 341,
-      "genre": "Pop",
+      "genreName": "Pop",
       "url": "https://www.youtube.com/watch?v=79fzeNUqQbQ"
     },
     {
       "id": 7,
       "title": "I Wanna Dance with Somebody",
-      "artist": "Whitney Houston",
+      "artistName": "Whitney Houston",
       "year": 1987,
       "duration": 291,
-      "genre": "Pop",
+      "genreName": "Pop",
       "url": "https://www.youtube.com/watch?v=eH3giaIzONA"
     },
     {
       "id": 8,
       "title": "Hype Boy",
-      "artist": "NewJeans",
+      "artistName": "NewJeans",
       "year": 2022,
       "duration": 179,
-      "genre": "K-pop",
+      "genreName": "K-pop",
       "url": "https://www.youtube.com/watch?v=11cta61wi0g"
     }
   ]
