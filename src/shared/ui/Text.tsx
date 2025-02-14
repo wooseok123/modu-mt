@@ -1,7 +1,7 @@
-interface TextProps {
+interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
   children: React.ReactNode;
-  fontSize: number;
+  fontSize?: string;
   fontFamily?: string;
   fontWeight?: number;
   color?: string;
@@ -10,7 +10,7 @@ interface TextProps {
 export const Text = ({
   as = "span",
   children,
-  fontSize,
+  fontSize = "12px",
   fontFamily,
   fontWeight,
   color = "#000",

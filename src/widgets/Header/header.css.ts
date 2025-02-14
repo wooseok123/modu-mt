@@ -11,3 +11,10 @@ export const headerContainer = style({
   top: 0,
   zIndex: 100,
 });
+
+export const headerWrapper = style({
+  display: "flex",
+  width: "100%",
+  alignItems: "center",
+  justifyContent: "space-between",
+});

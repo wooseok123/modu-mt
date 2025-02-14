@@ -1,8 +1,7 @@
-import { Providers } from "@/shared/providers/jotai";
 import "@/shared/styles/global.css";
 import { container } from "./page.css";
 import { Footer, Header } from "@/widgets";
-
+import { Providers } from "@/shared/providers/provider";
 export default function RootLayout({
   children,
 }: Readonly<{
