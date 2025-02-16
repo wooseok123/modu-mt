@@ -42,55 +42,57 @@ export const Header: React.FC = () => {
   const currentPath = usePathname() as PagePath;
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
-  const { headerName, dropDownData } = useMemo(
-    () => ({
-      headerName: pageLinks.find((el) => el.href === currentPath)!.name,
+  const { headerName, dropDownData } = useMemo(() => {
+    const currentPage = pageLinks.find((el) => el.href === currentPath);
+    if (!currentPage) {
+      return {
+        headerName: "",
+        dropDownData: [],
+      };
+    }
+    return {
+      headerName: currentPage.name,
       dropDownData: pageLinks.filter(
         (el) => el.href !== currentPath && el.name !== "MODUMT",
       ),
-    }),
-    [currentPath],
-  );
+    };
+  }, [currentPath]);
 
   useEffect(() => {
     setIsDropdownOpen(false);
   }, [currentPath]);
 
-  if (!pageLinks.find((el) => el.href === currentPath)) {
-    return <></>;
-  } else {
-    return (
-      <header className={headerContainer}>
-        <div className={headerWrapper}>
-          <div className={headerLeft}>
-            <Text fontSize="16px">{headerName}</Text>
-            <NextImg
-              className={`${headerDropdownImg} ${isDropdownOpen ? rotateIconActive : rotateIcon} `}
-              src="/dropdown.png"
-              alt="dropdown"
-              width={11}
-              height={11}
-              touchable={true}
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            />
-          </div>
-
+  return (
+    <header className={headerContainer}>
+      <div className={headerWrapper}>
+        <div className={headerLeft}>
+          <Text fontSize="16px">{headerName}</Text>
           <NextImg
-            src="/header_menu.png"
-            alt="menu"
-            width={15}
-            height={15}
+            className={`${headerDropdownImg} ${isDropdownOpen ? rotateIconActive : rotateIcon} `}
+            src="/dropdown.png"
+            alt="dropdown"
+            width={11}
+            height={11}
             touchable={true}
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           />
-          {isDropdownOpen && (
-            <DropDownBackground onClick={() => setIsDropdownOpen(false)}>
-              <LogoDropdown dropDownData={dropDownData} />
-            </DropDownBackground>
-          )}
         </div>
-      </header>
-    );
-  }
+
+        <NextImg
+          src="/header_menu.png"
+          alt="menu"
+          width={15}
+          height={15}
+          touchable={true}
+        />
+        {isDropdownOpen && (
+          <DropDownBackground onClick={() => setIsDropdownOpen(false)}>
+            <LogoDropdown dropDownData={dropDownData} />
+          </DropDownBackground>
+        )}
+      </div>
+    </header>
+  );
 };
 
 const DropDownBackground = ({
