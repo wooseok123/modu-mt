@@ -56,37 +56,41 @@ export const Header: React.FC = () => {
     setIsDropdownOpen(false);
   }, [currentPath]);
 
-  return (
-    <header className={headerContainer}>
-      <div className={headerWrapper}>
-        <div className={headerLeft}>
-          <Text fontSize="16px">{headerName}</Text>
-          <NextImg
-            className={`${headerDropdownImg} ${isDropdownOpen ? rotateIconActive : rotateIcon} `}
-            src="/dropdown.png"
-            alt="dropdown"
-            width={11}
-            height={11}
-            touchable={true}
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          />
-        </div>
+  if (!pageLinks.find((el) => el.href === currentPath)) {
+    return <></>;
+  } else {
+    return (
+      <header className={headerContainer}>
+        <div className={headerWrapper}>
+          <div className={headerLeft}>
+            <Text fontSize="16px">{headerName}</Text>
+            <NextImg
+              className={`${headerDropdownImg} ${isDropdownOpen ? rotateIconActive : rotateIcon} `}
+              src="/dropdown.png"
+              alt="dropdown"
+              width={11}
+              height={11}
+              touchable={true}
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            />
+          </div>
 
-        <NextImg
-          src="/header_menu.png"
-          alt="menu"
-          width={15}
-          height={15}
-          touchable={true}
-        />
-        {isDropdownOpen && (
-          <DropDownBackground onClick={() => setIsDropdownOpen(false)}>
-            <LogoDropdown dropDownData={dropDownData} />
-          </DropDownBackground>
-        )}
-      </div>
-    </header>
-  );
+          <NextImg
+            src="/header_menu.png"
+            alt="menu"
+            width={15}
+            height={15}
+            touchable={true}
+          />
+          {isDropdownOpen && (
+            <DropDownBackground onClick={() => setIsDropdownOpen(false)}>
+              <LogoDropdown dropDownData={dropDownData} />
+            </DropDownBackground>
+          )}
+        </div>
+      </header>
+    );
+  }
 };
 
 const DropDownBackground = ({
