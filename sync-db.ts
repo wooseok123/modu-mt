@@ -78,10 +78,36 @@ async function syncDatabase() {
       console.log(`${modified.length}개 항목 수정됨`);
     }
     console.log("데이터베이스 동기화 완료");
+
+    const NEXT_PUBLIC_APP_URL = process.env.NEXT_PUBLIC_APP_URL;
+    if (!NEXT_PUBLIC_APP_URL) {
+      throw new Error("NEXT_PUBLIC_APP_URL이 설정되지 않았습니다.");
+    }
+
+    const revalidateResponse = await fetch(
+      `${NEXT_PUBLIC_APP_URL}/api/revalidate`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          secret: process.env.REVALIDATE_SECRET,
+          paths: ["/", "/musics"],
+        }),
+      },
+    );
+
+    if (!revalidateResponse.ok) {
+      throw new Error("Revalidation failed");
+    }
+
+    console.log("캐시 무효화 완료");
   } catch (error) {
     console.error("Error syncing database:", error);
     process.exit(1);
   } finally {
+    process.exit(0);
   }
 }
 

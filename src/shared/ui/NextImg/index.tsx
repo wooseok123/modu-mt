@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { touchableImage, defaultImage } from "./index.css";
 
 interface NextImgProps extends React.HTMLAttributes<HTMLImageElement> {
   src: string;
@@ -14,14 +15,17 @@ export const NextImg = ({
   width,
   height,
   touchable = false,
+  className,
+  ...rest
 }: NextImgProps) => {
   return (
     <Image
-      style={{ cursor: touchable ? "pointer" : "default" }}
+      className={`${touchable ? touchableImage : defaultImage} ${className}`}
       src={src}
       alt={alt}
       width={width}
       height={height}
+      {...rest}
     />
   );
 };
