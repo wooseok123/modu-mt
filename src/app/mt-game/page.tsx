@@ -1,4 +1,4 @@
-"use client ";
+"use client";
 import { GET_ALL_GENRES } from "./page.query";
 import { useQuery } from "@apollo/client";
 
