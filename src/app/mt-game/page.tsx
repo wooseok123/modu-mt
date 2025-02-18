@@ -1,16 +1,13 @@
-import apolloClient from "@/shared/lib/apollo";
+"use client ";
 import { GET_ALL_GENRES } from "./page.query";
+import { useQuery } from "@apollo/client";
 
-export default async function MTGame() {
-  const { data } = await apolloClient.query({
-    query: GET_ALL_GENRES,
+export default function MTGame() {
+  const {} = useQuery(GET_ALL_GENRES, {
     fetchPolicy: "cache-first",
-    context: {
-      caches: "force-cache",
-    },
+    pollInterval: 1000 * 60,
+    nextFetchPolicy: "cache-first",
   });
-
-  console.log(data);
 
   return <main></main>;
 }
